@@ -1,0 +1,13 @@
+config:
+  api:
+    riot:
+      /mp-rest/url: https://la1.api.riotgames.com/lol/summoner/v4/summoners/
+      /mp-rest/scope: javax.inject.Singleton
+
+quarkus:
+  http:
+    port: 8083
+  rest-client:
+    config-api-riot:
+      url: https://la1.api.riotgames.com/lol/summoner/v4/summoners/
+      scope: javax.inject.Singleton
